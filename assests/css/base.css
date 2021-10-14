@@ -1,0 +1,293 @@
+/* Tạo lớp giả chung cho các biến hay lặp lại */
+
+:root {
+    --primary-color: #14b9d5;
+    --secondary-color: #f1f1f1;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #9a9a9a;
+    --border-color: #dbdbdb;
+    --background-color: rgba(0, 0, 0, 0.2);
+    --title-color: #555;
+    /* subnav */
+    --navbar-height: 34px;
+    --header-height: 104px;
+    --subnav-width: 190px;
+    --subnav-height: 48px;
+    --slider-height: 972px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* Đây là hack để cho cỡ chữ thông thường = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: overlay;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ba71da;
+  border: none;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+.header-option::-webkit-scrollbar {
+    display: none;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Subnav */
+
+.subnav-link-description {
+    float: right;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 11px;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+.subnav-hot {
+    background: #f76570;
+}
+
+.subnav-best {
+    background: #14b9d5;
+}
+
+.subnav-new {
+    background: #1bbc9b;
+}
+
+
+
+.destination-europe {
+    background-image: url('../img/content_img/destination/destination_1.jpeg');
+}
+
+.destination-thailandia {
+    background-image: url('../img/content_img/destination/destination_2.jpeg');
+}
+
+.destination-asia {
+    background-image: url('../img/content_img/destination/destination_3.jpeg');
+}
+
+.destination-italy {
+    background-image: url('../img/content_img/destination/destination_4.jpeg');
+}
+
+.destination-netherlands {
+    background-image: url('../img/content_img/destination/destination_5.jpeg');
+}
+
+.destination-usa {
+    background-image: url('../img/content_img/destination/destination_6.jpeg');
+}
+
+
+.destination-icon-europe {
+    background-image: url('../img/content_img/icon_des/img_1.png');
+}
+
+.destination-icon-thailandia {
+    background-image: url('../img/content_img/icon_des/img_2.png');
+}
+
+.destination-icon-asia {
+    background-image: url('../img/content_img/icon_des/img_3.png');
+}
+
+.destination-icon-italy {
+    background-image: url('../img/content_img/icon_des/img_4.png');
+}
+
+.destination-icon-netherlands {
+    background-image: url('../img/content_img/icon_des/img_5.png');
+}
+
+.destination-icon-usa {
+    background-image: url('../img/content_img/icon_des/img_6.png');
+}
+
+.best-beaches-option-icon-world {
+    background-image: url('../img/content_img/best_beaches/option_img/world.png');
+}
+
+.best-beaches-option-icon-cruises {
+    background-image: url('../img/content_img/best_beaches/option_img/cruises.png');
+}
+
+.best-beaches-option-icon-tour {
+    background-image: url('../img/content_img/best_beaches/option_img/tour.png');
+}
+
+/* Best Packages option */
+
+.option-package-img-berlin {
+    background-image: url('../img/option_img/best_packages/Berlin.jpeg');
+}
+
+.option-package-img-hongkong {
+    background-image: url('../img/option_img/best_packages/Hong_Kong.jpeg');
+}
+
+.option-package-img-sanfrancisco {
+    background-image: url('../img/option_img/best_packages/San_Francisco.jpeg');
+}
+
+.package-info-btn-berlin {
+    background: linear-gradient(to right, #ffd105, #ff9b05);
+}
+
+.package-info-btn-hongkong {
+    background: linear-gradient(to right, #f76570, #f78d65);
+}
+
+.package-info-btn-sanfrancisco {
+    background: linear-gradient(to right, #ba71da, #da717b);
+}
+
+/* Last minutes option */
+
+.option-package-img-tuscany {
+    background-image: url('../img/option_img/last-minutes/tuscany.jpeg');
+}
+
+.option-package-img-amsterdam {
+    background-image: url('../img/option_img/last-minutes/amsterdam.jpeg');
+}
+
+.option-package-img-phuket {
+    background-image: url('../img/option_img/last-minutes/phuket.jpeg');
+}
+
+.package-info-btn-tuscany {
+    background: linear-gradient(to right, #1bbc9b, #1bbc63);
+}
+
+.package-info-btn-amsterdam {
+    background: linear-gradient(to right, #f3a46b, #f3c96b);
+}
+
+.package-info-btn-phuket {
+    background: linear-gradient(to right, #14b9d5, #14d5b1);
+}
+
+/* Destination item */
+
+.destination-item-infor-icon--berlin {
+    background: linear-gradient(to right, #ffd205, #ff9b05);
+}
+
+.destination-item-option-point--berlin,
+.promotions-destination-item-details--berlin {
+    background: #ffd205;
+}
+
+.destination-item-infor-icon--hong-kong {
+    background: linear-gradient(to right, #f76570, #f78d65);
+}
+
+.destination-item-option-point--hong-kong,
+.promotions-destination-item-details--hong-kong {
+    background: #f76570;
+}
+
+.destination-item-infor-icon--san-francisco {
+    background: linear-gradient(to right, #ba71da, #da717b);
+}
+
+.destination-item-option-point--san-francisco,
+.promotions-destination-item-details--san-francisco {
+    background: #ba71da;
+}
+
+/* ------------------------------------------- */
+
+/* Slider */
+
+/* ------------------------------------------- */
+
+/* Animation lib */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes rotateItem {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
